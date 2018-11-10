@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+  before_action :set_authors
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
   # GET /books
@@ -62,6 +63,10 @@ class BooksController < ApplicationController
   end
 
   private
+    def set_authors
+      @authors = Author.all
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_book
       @book = Book.find(params[:id])
