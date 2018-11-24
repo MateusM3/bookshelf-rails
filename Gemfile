@@ -22,6 +22,7 @@ gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 
 #autenticação
 gem 'devise', '~> 4.5'
+gem 'cancancan', '~> 2.3'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
